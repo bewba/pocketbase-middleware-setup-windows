@@ -14,4 +14,4 @@ API_SECRET_KEY=your-secret-key
 
 ### Manual override for superadmin email
 
-docker exec -it pocketbase /usr/local/bin/pocketbase admin create [EMAIL_ADDRESS] [PASSWORD]
+```docker exec -it pocketbase /usr/local/bin/pocketbase admin create [EMAIL_ADDRESS] [PASSWORD]```
