@@ -1,0 +1,15 @@
+services:
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:latest
+    container_name: pocketbase
+    environment:
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+    volumes:
+      - ./pb_data:/pb_data
+      - ./pb_hooks:/pb_hooks
+    command: [ "serve", "--http=0.0.0.0:8090", "--dir=/pb_data" ]
+    ports:
+      - "8090:8090"
+    restart: always
