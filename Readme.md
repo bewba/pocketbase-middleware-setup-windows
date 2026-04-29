@@ -1,7 +1,7 @@
 # Docker pocketbase setup with middleware for windows
 
 ### Setup 
-1. Create a .env file with the variables ```ADMIN_EMAIL```, ```ADMIN_PASSWORD```, ```API_SECRET_KEY```
+Create a .env file with the variables ```ADMIN_EMAIL```, ```ADMIN_PASSWORD```, ```API_SECRET_KEY```
 
 ### env variables
 
