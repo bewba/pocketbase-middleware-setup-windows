@@ -27,8 +27,8 @@ API_SECRET_KEY=your-secret-key
 ### Testing
 For middleware testing, you can run 
 ```
-const API_URL = 'http://localhost:8090/api/collections/trip_coords/records';
-const SECRET_KEY = 'JKDSF9sad0H0DH090923RNio1!';
+const API_URL = 'http://localhost:8090/api/collections/[YOUR_TABLE]/records';
+const SECRET_KEY = YOUR_ENV_VARIABLE;
 
 async function testMiddleware() {
     console.log("--- Starting Middleware Tests ---");
